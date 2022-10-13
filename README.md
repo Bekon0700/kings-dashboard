@@ -5,3 +5,6 @@
 * rechart
 * createBrowserRouter
 * tailwind dark:mode
+
+
+### Live site link: https://kings-dashboard.netlify.app/
