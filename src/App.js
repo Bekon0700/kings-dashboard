@@ -5,6 +5,7 @@ import Products from './pages/product_page/Products'
 import Customers from './pages/customer_page/Customers'
 import Order from './pages/oder_page/Order'
 import Sales from './pages/sales_page/Sales'
+import ThemeProvider from './context/ThemeProvider';
 
 function App() {
   const router = createBrowserRouter(
@@ -58,8 +59,10 @@ function App() {
   )
   return (
     <div>
-      <RouterProvider router={router}>
-      </RouterProvider>
+      <ThemeProvider>
+        <RouterProvider router={router}>
+        </RouterProvider>
+      </ThemeProvider>
     </div>
   );
 }
